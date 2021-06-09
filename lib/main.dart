@@ -8,18 +8,18 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   void answerQuestion() {
-    print('Answer Kitti');
+    print('Answer');
   }
 
   Widget build(BuildContext context) {
     var questions = [
-      "Wassup Nigga ? ",
-      "Are u k?",
+      "what is your name ? ",
+      "how are you?",
     ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('PB APP v0.01'),
+          title: Text('UI'),
         ),
         body: Column(
           children: [
@@ -30,11 +30,11 @@ class MyApp extends StatelessWidget {
             ),
             RaisedButton(
               child: Text('Answer 2'),
-              onPressed: () => print('Answer2 kitti'),
+              onPressed: () => print('Answer2'),
             ),
             RaisedButton(
               child: Text('Answer 3'),
-              onPressed: () => print('Answer3 kitti'),
+              onPressed: () => print('Answer3'),
             ),
           ],
         ),
